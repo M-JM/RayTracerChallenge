@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestProjects", "TestProjects", "{E6313E2C-55BE-4AC8-8291-28D49E5D2B09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CannonFiringProjectiles", "CannonFiringProjectiles\CannonFiringProjectiles.csproj", "{26EB7CD1-D152-4B44-87FF-BEA61379D41E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +30,16 @@ Global
 		{A595326D-ED70-4DBF-BFA8-FC7A230ABED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A595326D-ED70-4DBF-BFA8-FC7A230ABED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A595326D-ED70-4DBF-BFA8-FC7A230ABED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26EB7CD1-D152-4B44-87FF-BEA61379D41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26EB7CD1-D152-4B44-87FF-BEA61379D41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26EB7CD1-D152-4B44-87FF-BEA61379D41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26EB7CD1-D152-4B44-87FF-BEA61379D41E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26EB7CD1-D152-4B44-87FF-BEA61379D41E} = {E6313E2C-55BE-4AC8-8291-28D49E5D2B09}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {77F5E838-E8DC-44DB-870A-875038CF51F2}
