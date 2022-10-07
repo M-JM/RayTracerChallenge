@@ -1,7 +1,6 @@
 using NUnit.Framework;
 using RayTracerChallenge;
 using System;
-using TechTalk.SpecFlow;
 
 namespace RayTracerChallengeTest.StepDefinitions
 {
@@ -11,10 +10,14 @@ namespace RayTracerChallengeTest.StepDefinitions
         //Refactor the private fields and use only 2 Tuples to perform the operations
         // Maybe Abstract class Tuples and let Point and Vector inherit from it ?
         // Using Tuples does not make it clear what the type of the object is.
-        
+        // naming convention of methods should be cleaned up
+        // duplicate tests can be removed
 
-        private Tuples _tuplesA = new Tuples(0f,0f,0f,0f);
-        private Tuples _tuplesB = new Tuples(0f,0f,0f,0f);
+
+        private Tuples _tuplesA = new Tuples(0f, 0f, 0f, 0f);
+        private float _scalar = 0;
+        private float _resultOfMagnitude = 0;
+        private Tuples _tuplesB = new Tuples(0f, 0f, 0f, 0f);
         private Tuples? _createPoint;
         private Tuples? _createVector;
         private Tuples _result = new Tuples(0f, 0f, 0f, 0f);
@@ -28,7 +31,7 @@ namespace RayTracerChallengeTest.StepDefinitions
         public void GivenA_Tuple(float p0, float p1, float p2, float p3)
         {
             _tuplesA = new Tuples(p0, p1, p2, p3);
-            
+
         }
 
         [Then(@"a\.x = (.*)f")]
@@ -36,7 +39,7 @@ namespace RayTracerChallengeTest.StepDefinitions
         {
             Assert.That(p0, Is.EqualTo(_tuplesA.XAxis).Within(0.01f));
         }
-        
+
         [Then(@"a\.y = (.*)f")]
         public void ThenA_Y(float p1)
         {
@@ -67,7 +70,7 @@ namespace RayTracerChallengeTest.StepDefinitions
             Assert.False(_tuplesA.IsVector());
         }
 
-      
+
         [Given(@"b <- tuple\((.*)f, (.*)f, (.*)f, (.*)f\)")]
         public void GivenB_Tuple(float p0, float p1, float p2, float p3)
         {
@@ -84,7 +87,7 @@ namespace RayTracerChallengeTest.StepDefinitions
         public void ThenB_Y(float p1)
         {
             Assert.That(p1, Is.EqualTo(_tuplesB.YAxis).Within(0.01f));
-     
+
         }
 
         [Then(@"b\.z = (.*)f")]
@@ -174,8 +177,6 @@ namespace RayTracerChallengeTest.StepDefinitions
             _vectorD = Tuples.CreateVector(p0, p1, p2);
         }
 
-
-
         [When(@"the first and second vector are added")]
         public void WhenTheFirstAndSecondVectorAreAdded()
         {
@@ -213,7 +214,6 @@ namespace RayTracerChallengeTest.StepDefinitions
             Assert.AreEqual("Cannot add two points together", _argumentException.Message);
         }
 
-
         [When(@"the first and second vectors are substracted")]
         public void WhenTheFirstAndSecondVectorsAreSubstracted()
         {
@@ -232,7 +232,6 @@ namespace RayTracerChallengeTest.StepDefinitions
             _argumentException = Assert.Throws<ArgumentException>(() => _result = _vectorD - _pointB);
         }
 
-
         [When(@"the second tuple is substracted from the first tuple")]
         public void WhenTheSecondTupleIsSubstractedFromTheFirstTuple()
         {
@@ -249,7 +248,7 @@ namespace RayTracerChallengeTest.StepDefinitions
         [Given(@"the zero vector is vector\((.*)f, (.*)f, (.*)f\)")]
         public void GivenTheZeroVectorIsVectorFFF(float p0, float p1, float p2)
         {
-            _vectorC = Tuples.CreateVector(p0, p1,p2);
+            _vectorC = Tuples.CreateVector(p0, p1, p2);
         }
 
         [When(@"the first tuple is substracted from the zero vector")]
@@ -270,9 +269,103 @@ namespace RayTracerChallengeTest.StepDefinitions
             _result = -_tuplesA;
         }
 
+        [Given(@"the scalar is (.*)f")]
+        public void GivenTheScalarIsF(float p0)
+        {
+            _scalar = p0;
+        }
+
+        [When(@"the first tuple is multiplied by the scalar")]
+        public void WhenTheFirstTupleIsMultipliedByTheScalar()
+        {
+            _result = _tuplesA * _scalar;
+
+        }
+
+        [Given(@"the fraction is (.*)f")]
+        public void GivenTheFractionIsF(float p0)
+        {
+            _scalar = p0;
+        }
+
+        [When(@"the first tuple is divided by the scalar")]
+        public void WhenTheFirstTupleIsDividedByTheScalar()
+        {
+            _result = _tuplesA / _scalar;
+        }
+
+        [When(@"the magnitude of the first tuple is computed")]
+        public void WhenTheMagnitudeOfTheFirstTupleIsComputed()
+        {
+            _resultOfMagnitude = Tuples.Magnitude(_vectorD);
+        }
+
+        [Then(@"the result should be (.*)f")]
+        public void ThenTheResultShouldBeF(Decimal p0)
+        {
+            var expectedResult = p0;
+            Assert.That(_resultOfMagnitude, Is.EqualTo(expectedResult).Within(0.00001));
+
+
+        }
+
+        [Then(@"the result should be Sqrt\((.*)f\)")]
+        public void ThenTheResultShouldBeSqrtF(Decimal p0)
+        {
+            var expectedResult = Math.Sqrt(14);
+            Assert.That(_resultOfMagnitude, Is.EqualTo(expectedResult).Within(0.00001));
+
+        }
+
+
+        [When(@"the first tuple is normalized")]
+        public void WhenTheFirstTupleIsNormalized()
+        {
+            _result = Tuples.Normalize(_vectorD);
+        }
+
+        [Then(@"the result should be vector\((.*)/Sqrt\((.*)f\), (.*)/Sqrt\((.*)f\), (.*)/Sqrt\((.*)f\)\)")]
+        public void ThenTheResultShouldBeVectorSqrtFSqrtFSqrtF(int p0, Decimal p1, int p2, Decimal p3, int p4, Decimal p5)
+        {
+            _result = Tuples.CreateVector((float)(p0 / Math.Sqrt((double)p1)), (float)(p2 / Math.Sqrt((double)p3)), (float)(p4 / Math.Sqrt((double)p5)));
+        }
+
+        [Given(@"the first tuple is normalized")]
+        public void GivenTheFirstTupleIsNormalized()
+        {
+            _vectorD = Tuples.Normalize(_vectorD);
+        }
+
+        [When(@"the dot product of the first and second tuple is computed")]
+        public void WhenTheDotProductOfTheFirstAndSecondTupleIsComputed()
+        {
+            _resultOfMagnitude = Tuples.DotProduct(_vectorD, _vectorC);
+
+        }
+
+        [When(@"the cross product of the first and second tuple is computed")]
+        public void WhenTheCrossProductOfTheFirstAndSecondTupleIsComputed()
+        {
+            _result = Tuples.CrossProduct(_vectorD, _vectorC);
+        }
+
+        [Then(@"the first result should be vector\((.*)f, (.*)f, (.*)f\)")]
+        public void ThenTheFirstResultShouldBeVectorFFF(Decimal p0, Decimal p1, Decimal p2)
+        {
+            var expectedResult = Tuples.CreateVector((float)p0, (float)p1, (float)p2);
+            Assert.That(Tuples.Equals(expectedResult, _result), Is.True);
+
+        }
+
+
+        [Given(@"we want to create a new tuple with x=(.*)f,y=(.*)f,z=(.*)f,w=(.*)f")]
+        public void GivenWeWantToCreateANewTupleWithXFYFZFWF(float p0, float p1, float p2, float p3)
+        {
+            _result = new Tuples(p0, p1, p2, p3);
+
+        }
+
     }
-
-
 
 }
 

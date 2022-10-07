@@ -9,6 +9,8 @@ namespace RayTracerChallenge
     // Used the class name Tuples since Tuple is an already existing class within the .NET framework
     // Alternativly i could have created Tuple class within its own namespace.
 
+    // maybe Struct is a more approriate data type for Tuples
+   
     public class Tuples
     {
         public float XAxis { get; private set; }
@@ -99,6 +101,41 @@ namespace RayTracerChallenge
         {
             return Substract(a, b);
         }
+
+        public static Tuples operator *(Tuples a, float b)
+        {
+            return new Tuples(a.XAxis * b, a.YAxis * b, a.ZAxis * b, a.WAxis * b);
+        }
+
+        public static Tuples operator /(Tuples a, float b)
+        {
+            return new Tuples(a.XAxis / b, a.YAxis / b, a.ZAxis / b, a.WAxis / b);
+        }
+
+        public static float Magnitude(Tuples a)
+        {
+            return (float)Math.Sqrt((a.XAxis * a.XAxis) + (a.YAxis * a.YAxis) + (a.ZAxis * a.ZAxis) + (a.WAxis * a.WAxis));
+        }
+        public static Tuples Normalize(Tuples a)
+        {
+            float magnitude = Magnitude(a);
+            return new Tuples(a.XAxis / magnitude, a.YAxis / magnitude, a.ZAxis / magnitude, a.WAxis / magnitude);
+        }
+
+        public static float DotProduct(Tuples a, Tuples b)
+        {
+            return (a.XAxis * b.XAxis) + (a.YAxis * b.YAxis) + (a.ZAxis * b.ZAxis) + (a.WAxis * b.WAxis);
+        }
+
+        public static Tuples CrossProduct(Tuples a, Tuples b)
+        {
+            return CreateVector(
+                (a.YAxis * b.ZAxis) - (a.ZAxis * b.YAxis),
+                (a.ZAxis * b.XAxis) - (a.XAxis * b.ZAxis),
+                (a.XAxis * b.YAxis) - (a.YAxis * b.XAxis)
+                );
+        }
+
 
         #endregion
 
