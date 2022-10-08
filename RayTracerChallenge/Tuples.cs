@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace RayTracerChallenge
 {
-    // Used the class name Tuples since Tuple is an already existing class within the .NET framework
+    // REFACTOR Used the class name Tuples since Tuple is an already existing class within the .NET framework
     // Alternativly i could have created Tuple class within its own namespace.
 
-    // maybe Struct is a more approriate data type for Tuples
-   
+    // REFACTOR maybe Struct is a more approriate data type for Tuples
+
     public class Tuples
     {
         public float XAxis { get; private set; }
@@ -140,6 +140,8 @@ namespace RayTracerChallenge
         #endregion
 
         #region Equality
+
+        // TODO implement Equality properly for Tuples
 
         public override bool Equals(object obj)
         {

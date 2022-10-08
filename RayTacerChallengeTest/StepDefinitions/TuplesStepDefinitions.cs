@@ -7,11 +7,11 @@ namespace RayTracerChallengeTest.StepDefinitions
     [Binding]
     public class TuplesStepDefinitions
     {
-        //Refactor the private fields and use only 2 Tuples to perform the operations
-        // Maybe Abstract class Tuples and let Point and Vector inherit from it ?
-        // Using Tuples does not make it clear what the type of the object is.
-        // naming convention of methods should be cleaned up
-        // duplicate tests can be removed
+        // TODO the private fields and use only 2 Tuples to perform the operations
+        // REFACTOR Maybe Abstract class Tuples and let Point and Vector inherit from it ?
+        // REFACTOR Using Tuples does not make it clear what the type of the object is.
+        // TODO naming convention of methods should be cleaned up
+        // TODO duplicate tests can be removed
 
 
         private Tuples _tuplesA = new Tuples(0f, 0f, 0f, 0f);

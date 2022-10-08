@@ -270,7 +270,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 43
-  testRunner.Given("we want to create a new tuple with x=4.0f,y=-4.0f,z=3.0f,w=0.0f", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("we want to create a new tuple with x=4.0f,y=-4.0f,z=3.0f,w=0.0f", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 44
  testRunner.Then("the result should be tuple(4.0f, -4.0f, 3.0f, 0.0f)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -1284,16 +1284,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 199
-testRunner.Given("the first tuple is vector(1.0f, 2.0f, 3.0f)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("the first tuple is vector(1.0f, 2.0f, 3.0f)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 200
-testRunner.And("the second tuple is vector(2.0f, 3.0f, 4.0f)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the second tuple is vector(2.0f, 3.0f, 4.0f)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 201
-testRunner.When("the dot product of the first and second tuple is computed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the dot product of the first and second tuple is computed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 202
-testRunner.Then("the result should be 20.0f", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the result should be 20.0f", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

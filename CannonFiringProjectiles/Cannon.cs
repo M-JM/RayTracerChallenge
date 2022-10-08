@@ -8,6 +8,12 @@ namespace CannonFiringProjectiles
 {
     public class Cannon
     {
+        //maybe move plot to seperate class
+        //during refactor run , encapsulate properties
+        //override ToString to output by default X and Y coordinates
+        //add method to output all coordinates of Environment and Projectile
+        //TDD approach too for test projects ?
+
         public Environment Environment { get; set; }
         public Projectile Projectile { get; set; }
 
