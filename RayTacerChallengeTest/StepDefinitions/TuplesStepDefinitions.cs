@@ -18,8 +18,6 @@ namespace RayTracerChallengeTest.StepDefinitions
         private float _scalar = 0;
         private float _resultOfMagnitude = 0;
         private Tuples _tuplesB = new Tuples(0f, 0f, 0f, 0f);
-        private Tuples? _createPoint;
-        private Tuples? _createVector;
         private Tuples _result = new Tuples(0f, 0f, 0f, 0f);
         private Tuples _pointA = new Tuples(0f, 0f, 0f, 0f);
         private Tuples _pointB = new Tuples(0f, 0f, 0f, 0f);
@@ -312,7 +310,7 @@ namespace RayTracerChallengeTest.StepDefinitions
         [Then(@"the result should be Sqrt\((.*)f\)")]
         public void ThenTheResultShouldBeSqrtF(Decimal p0)
         {
-            var expectedResult = Math.Sqrt(14);
+            var expectedResult = Math.Sqrt((double)p0);
             Assert.That(_resultOfMagnitude, Is.EqualTo(expectedResult).Within(0.00001));
 
         }

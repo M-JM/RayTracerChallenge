@@ -45,5 +45,94 @@ namespace RayTracerChallenge
             }
         }
 
+        public string BuildPPMHeader()
+        {
+            string header = "P3" + Environment.NewLine + Width + " " + Height + Environment.NewLine + "255";
+
+            return header;
+        }
+
+        public string BuildPPMData()
+        {
+            string data = "";
+            for (int i = 0; i < Height; i++)
+            {
+
+                data +=AppendPPMLine(i);
+               
+                data = data.TrimEnd();
+                data += Environment.NewLine;
+            }
+            
+           
+            
+            return data;
+        }
+        
+        public string AppendPPMLine(int j)
+        {
+            string fullLine = "";
+            for (int i = 0; i < Width; i++)
+            {
+               fullLine += ConvertColorInInt(_pixels[i, j].Red) + " " + ConvertColorInInt(_pixels[i, j].Green) + " " + ConvertColorInInt(_pixels[i, j].Blue) + " ";
+            }
+            string result = StringCheckRecursion(fullLine,"");
+
+
+
+            return result;
+        }
+        
+        public string StringCheckRecursion(string line, string resultR)
+        {
+            string result = resultR;
+            string newLine = line;
+            if (line.Length > 70)
+            {
+                if (newLine[69] == ' ')
+                {
+                    resultR += string.Concat(newLine.AsSpan(0, 69), Environment.NewLine);
+                    newLine = newLine.Remove(0, 69);
+                    return StringCheckRecursion(newLine,resultR);
+
+                }
+                else
+                {
+                    for (int i = 70; i >= 0; i-- )
+                    {
+                        if (newLine[i] == ' ')
+                        {
+                            resultR += string.Concat(newLine.AsSpan(0, i), Environment.NewLine);
+                            newLine = newLine.Remove(0, i).TrimStart();
+                            return StringCheckRecursion(newLine, resultR);
+                        }  
+                    }
+                   
+                }
+            }
+            else
+            {
+                result += string.Concat(newLine.AsSpan(0, line.Length-1), Environment.NewLine);
+            }
+            return result;
+        }
+
+        public int ConvertColorInInt(double colorValue)
+        {
+            int result = (int)Math.Round(colorValue * 255, MidpointRounding.AwayFromZero);
+
+            if (result > 255)
+            {
+                result = 255;
+            }
+            else if (result < 0)
+            {
+                result = 0;
+            }
+
+            return result;
+            
+        }
     }
+
 }
