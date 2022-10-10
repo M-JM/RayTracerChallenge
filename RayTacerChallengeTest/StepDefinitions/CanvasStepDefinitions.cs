@@ -158,7 +158,7 @@ namespace RayTracerChallengeTest.StepDefinitions
         [When(@"we convert it to int")]
         public void WhenWeConvertItToInt()
         {
-            _colorConversionToIntResult = _canvas.ConvertColorInInt(_colorValue);
+            _colorConversionToIntResult = Canvas.ConvertColorInInt(_colorValue);
         }
 
         [Then(@"the result should be (.*)")]

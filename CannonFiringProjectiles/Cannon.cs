@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RayTracerChallenge;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -60,7 +61,33 @@ namespace CannonFiringProjectiles
             plt.AddScatter(XPositions.ToArray(), YPositions.ToArray());
             Console.WriteLine($"image of projectile trajectory can be found here : " + plt.SaveFig("cannon.png"));
         }
-        
+
+        public async Task PlotOnCanvasAsync(int width, int height)
+        {
+            Canvas canvas = new Canvas(width, height);
+            
+            while(Projectile.Position.YAxis > 0)
+            {
+                Tick();
+                var xCordinate = ConvertToCanvasCoordinate(Projectile.Position.XAxis);
+                var yCordinate = ConvertToCanvasCoordinate(canvas.Height-Projectile.Position.YAxis);
+                if(yCordinate < canvas.Height && yCordinate >0 && xCordinate < canvas.Width)
+                {
+                    canvas.WritePixel(xCordinate, yCordinate, new Color(1, 0, 0));
+                }
+             
+            }
+         
+           
+           await canvas.WritePPMToFileAsync();
+            
+        }
+
+
+        public int ConvertToCanvasCoordinate(double coordinate)
+        {
+            return (int)Math.Round(coordinate, MidpointRounding.ToZero);
+        }
 
 
     }

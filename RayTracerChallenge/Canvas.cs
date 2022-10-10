@@ -68,6 +68,20 @@ namespace RayTracerChallenge
             
             return data;
         }
+
+        public string PPMFile()
+        {
+            return BuildPPMHeader() + Environment.NewLine + BuildPPMData();
+        }
+
+        public async Task WritePPMToFileAsync()
+        {
+            string PPM = PPMFile();
+
+            await File.WriteAllTextAsync("PPM.text", PPM);
+
+
+        }
         
         public string AppendPPMLine(int j)
         {
@@ -100,11 +114,12 @@ namespace RayTracerChallenge
                 {
                     for (int i = 70; i >= 0; i-- )
                     {
-                        if (newLine[i] == ' ')
+                        if (newLine[i-1] == ' ')
                         {
                             resultR += string.Concat(newLine.AsSpan(0, i), Environment.NewLine);
                             newLine = newLine.Remove(0, i).TrimStart();
                             return StringCheckRecursion(newLine, resultR);
+                            
                         }  
                     }
                    
@@ -117,7 +132,7 @@ namespace RayTracerChallenge
             return result;
         }
 
-        public int ConvertColorInInt(double colorValue)
+        public static int ConvertColorInInt(double colorValue)
         {
             int result = (int)Math.Round(colorValue * 255, MidpointRounding.AwayFromZero);
 
