@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace RayTracerChallenge
 {
+    //REFACTOR : move all PPM related methods in a seperate class as utility ?
+
     public class Canvas
     {
+
+        
         public int Width { get; set; }
 
         public int Height { get; set; }
@@ -96,7 +100,10 @@ namespace RayTracerChallenge
 
             return result;
         }
-        
+
+        //REFACTOR : Using recursion here is slow and not efficient.
+        // change this to a loop and use a stringbuilder
+
         public string StringCheckRecursion(string line, string resultR)
         {
             string result = resultR;
@@ -131,6 +138,9 @@ namespace RayTracerChallenge
             }
             return result;
         }
+
+        // REFACTOR : This method could be in a seperate class as utility
+        // REFACTOR : Checking the floor and ceiling can be done via Math class method. Remove the if statement.
 
         public static int ConvertColorInInt(double colorValue)
         {
