@@ -237,6 +237,276 @@ testRunner.Then(string.Format("the result should be {0}", result), ((string)(nul
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Comparing two matrices")]
+        [NUnit.Framework.CategoryAttribute("Equality")]
+        public virtual void ComparingTwoMatrices()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Equality"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Comparing two matrices", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 61
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 62
+testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 69
+testRunner.And("a matrix N with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 76
+testRunner.When("comparing the matrices", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 77
+testRunner.Then("they should be considered equal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Matrix equality with different matrices")]
+        [NUnit.Framework.CategoryAttribute("Equality")]
+        public virtual void MatrixEqualityWithDifferentMatrices()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Equality"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Matrix equality with different matrices", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 80
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 81
+testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 88
+testRunner.And("a matrix N with 4", "{2, 3, 4, 5},\r\n{6, 7, 8, 9},\r\n{8, 7, 6, 5},\r\n{4, 3, 2, 1}", ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 95
+testRunner.When("comparing the matrices", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 96
+testRunner.Then("they should not be considered equal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Multiplying a matrix by another maxtrix of the same size")]
+        [NUnit.Framework.CategoryAttribute("Multiplication")]
+        public virtual void MultiplyingAMatrixByAnotherMaxtrixOfTheSameSize()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Multiplication"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying a matrix by another maxtrix of the same size", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 100
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 101
+testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 108
+testRunner.And("a matrix N with 4", "{-2, 1, 2, 3},\r\n{3, 2, 1, -1},\r\n{4, 3, 6, 5},\r\n{1, 2, 7, 8}", ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 115
+testRunner.When("multiplying the matrices", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 116
+testRunner.Then("the outcome should be a Matrix with 4 and", "{20, 22, 50, 48},\r\n{44, 54, 114, 108},\r\n{40, 58, 110, 102},\r\n{16, 26, 46, 42}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Multiplying a matrix by a tuple")]
+        [NUnit.Framework.CategoryAttribute("Multiplication")]
+        public virtual void MultiplyingAMatrixByATuple()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Multiplication"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying a matrix by a tuple", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 126
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 127
+testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{2, 4, 4, 2},\r\n{8, 6, 4, 1},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 134
+testRunner.And("a tuple T with value (1, 2, 3, 1)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 135
+testRunner.When("multiplying the matrix and tuple", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 136
+testRunner.Then("the outcome should be a tuple with value (18, 24, 33, 1)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Multiplying a matrix by the identity matrix")]
+        [NUnit.Framework.CategoryAttribute("Multiplication")]
+        public virtual void MultiplyingAMatrixByTheIdentityMatrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Multiplication"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying a matrix by the identity matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 141
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 142
+testRunner.Given("a matrix M with 4", "{0, 1, 2, 4},\r\n{1, 2, 4, 8},\r\n{2, 4, 8, 16},\r\n{4, 8, 16, 32}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 149
+testRunner.And("a matrix Identity", "{1, 0, 0, 0},\r\n{0, 1, 0, 0},\r\n{0, 0, 1, 0},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 156
+testRunner.When("multiplying the matrix and identity matrix", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 157
+testRunner.Then("the result should be", "{0, 1, 2, 4},\r\n{1, 2, 4, 8},\r\n{2, 4, 8, 16},\r\n{4, 8, 16, 32}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Multiplying a tuple by the identity matrix")]
+        [NUnit.Framework.CategoryAttribute("Multiplication")]
+        public virtual void MultiplyingATupleByTheIdentityMatrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Multiplication"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying a tuple by the identity matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 166
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 167
+testRunner.Given("a matrix Identity", "{1, 0, 0, 0},\r\n{0, 1, 0, 0},\r\n{0, 0, 1, 0},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 174
+testRunner.And("a tuple T with value (1, 2, 3, 4)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 175
+testRunner.When("multiplying the tuple and identity matrix", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 176
+testRunner.Then("the outcome should be a tuple with value (1, 2, 3, 4)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

@@ -113,7 +113,7 @@ namespace RayTracerChallenge
                 if (newLine[69] == ' ')
                 {
                     resultR += string.Concat(newLine.AsSpan(0, 69), Environment.NewLine);
-                    newLine = newLine.Remove(0, 69);
+                    newLine = newLine.Remove(0, 69).TrimStart();
                     return StringCheckRecursion(newLine,resultR);
 
                 }
@@ -123,7 +123,7 @@ namespace RayTracerChallenge
                     {
                         if (newLine[i-1] == ' ')
                         {
-                            resultR += string.Concat(newLine.AsSpan(0, i), Environment.NewLine);
+                            resultR += string.Concat(newLine.AsSpan(0, i).TrimEnd(), Environment.NewLine);
                             newLine = newLine.Remove(0, i).TrimStart();
                             return StringCheckRecursion(newLine, resultR);
                             

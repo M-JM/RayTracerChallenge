@@ -42,6 +42,25 @@ namespace RayTracerChallenge
             return this.WAxis == 1.0f;
         }
 
+        public float GetElement(int index)
+        {
+            {
+                switch (index)
+                {
+                    case 0:
+                        return this.XAxis;
+                    case 1:
+                        return this.YAxis;
+                    case 2:
+                        return this.ZAxis;
+                    case 3:
+                        return this.WAxis;
+                    default:
+                        throw new IndexOutOfRangeException();
+                }
+            }
+        }
+
         public bool IsVector()
         {
             return this.WAxis == 0.0f;
@@ -55,7 +74,7 @@ namespace RayTracerChallenge
            
                 if (a == null || b == null)
                 {
-                    throw new ArgumentNullException();
+                throw new ArgumentNullException();
                 }
                 else if (a.IsPoint() && b.IsPoint())
                 {
@@ -143,9 +162,9 @@ namespace RayTracerChallenge
 
         // TODO implement Equality properly for Tuples
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
-            Tuples t = obj as Tuples;
+            Tuples? t = obj as Tuples;
             Tuples self = this as Tuples;
             if (t == null || self == null)
             {
@@ -158,6 +177,11 @@ namespace RayTracerChallenge
                     && t.ZAxis.IsEqualF(self.ZAxis)
                     && t.WAxis.IsEqualF(self.WAxis));
             }
+        }
+
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

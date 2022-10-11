@@ -51,7 +51,7 @@ namespace RayTracerChallenge
 
         public override bool Equals(object? obj)
         {
-            Color t = obj as Color;
+            Color? t = obj as Color;
             Color self = this as Color;
             
             if(t == null || self == null)
@@ -69,5 +69,9 @@ namespace RayTracerChallenge
 
         }
 
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
