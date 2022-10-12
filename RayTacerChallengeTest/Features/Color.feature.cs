@@ -200,7 +200,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 24
-  testRunner.Given("a first color with values (0.9, 0.6, 0.75)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a first color with values (0.9, 0.6, 0.75)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 25
  testRunner.And("a second color with values (0.7, 0.1, 0.25)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

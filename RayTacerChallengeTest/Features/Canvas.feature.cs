@@ -513,13 +513,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 104
-testRunner.Given("a canvas with width 10 and length 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a canvas with width 10 and length 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 105
-testRunner.When("every pixel of the canvas is set to color 1 and 0.8 and 0.6", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("every pixel of the canvas is set to color 1 and 0.8 and 0.6", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 106
-testRunner.And("creating a PPM pixel data for canvas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("creating a PPM pixel data for canvas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 107
  testRunner.Then("the PPM pixel data should be", "255 204 153 255 204 153 255 204 153 255 204 153 255 204 153 255 204\r\n153 255 204 " +

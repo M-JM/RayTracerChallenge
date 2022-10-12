@@ -38,7 +38,7 @@ Scenario: Creating a PPM pixel data
 	Then the PPM pixel data should be
 		"""
 		255 0 0
-
+		
 		"""
 
 @PPM @Drawing
@@ -57,7 +57,7 @@ Scenario: Constructing the PPM pixel data
 		255 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 		0 0 0 0 0 0 0 128 0 0 0 0 0 0 0
 		0 0 0 0 0 0 0 0 0 0 0 0 0 0 255
-
+		
 		"""
 		
 @PPM @ConvertColorToInt
@@ -92,23 +92,23 @@ Scenario Outline: Converting a color value to an int that does result in a decim
 	When we convert it to int
 	Then the result should be <int>
 Examples:
-		| ColorValue | int |
-		| 0.5        | 128 |
-		| 0.7        | 179 |
-		| 0.9        | 230 |
+	| ColorValue | int |
+	| 0.5        | 128 |
+	| 0.7        | 179 |
+	| 0.9        | 230 |
 
 @PPM @Drawing
 
 Scenario: Splitting long lines in PPM files
 
-Given a canvas with width 10 and length 2
-When every pixel of the canvas is set to color 1 and 0.8 and 0.6
-And creating a PPM pixel data for canvas
+	Given a canvas with width 10 and length 2
+	When every pixel of the canvas is set to color 1 and 0.8 and 0.6
+	And creating a PPM pixel data for canvas
 	Then the PPM pixel data should be
 		"""
 		255 204 153 255 204 153 255 204 153 255 204 153 255 204 153 255 204
 		153 255 204 153 255 204 153 255 204 153 255 204 153
 		255 204 153 255 204 153 255 204 153 255 204 153 255 204 153 255 204
 		153 255 204 153 255 204 153 255 204 153 255 204 153
-
+		
 		"""

@@ -21,7 +21,7 @@ Scenario: Adding colors
 @Operations @Subtraction
 
 Scenario: Substracting colors
-		Given a first color with values (0.9, 0.6, 0.75)
+	Given a first color with values (0.9, 0.6, 0.75)
 	And a second color with values (0.7, 0.1, 0.25)
 	When c2 is substracted from c1
 	Then the result is a Color with values (0.2, 0.5, 0.5)

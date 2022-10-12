@@ -53,8 +53,8 @@ namespace RayTracerChallenge
         {
             Color? t = obj as Color;
             Color self = this as Color;
-            
-            if(t == null || self == null)
+
+            if (t == null || self == null)
             {
                 return false;
             }

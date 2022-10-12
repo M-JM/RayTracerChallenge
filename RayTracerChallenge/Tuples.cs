@@ -45,19 +45,14 @@ namespace RayTracerChallenge
         public float GetElement(int index)
         {
             {
-                switch (index)
+                return index switch
                 {
-                    case 0:
-                        return this.XAxis;
-                    case 1:
-                        return this.YAxis;
-                    case 2:
-                        return this.ZAxis;
-                    case 3:
-                        return this.WAxis;
-                    default:
-                        throw new IndexOutOfRangeException();
-                }
+                    0 => this.XAxis,
+                    1 => this.YAxis,
+                    2 => this.ZAxis,
+                    3 => this.WAxis,
+                    _ => throw new IndexOutOfRangeException(),
+                };
             }
         }
 
@@ -71,39 +66,39 @@ namespace RayTracerChallenge
 
         private static Tuples Add(Tuples a, Tuples b)
         {
-           
-                if (a == null || b == null)
-                {
+
+            if (a == null || b == null)
+            {
                 throw new ArgumentNullException();
-                }
-                else if (a.IsPoint() && b.IsPoint())
-                {
-                    throw new ArgumentException("Cannot add two points together");
-                }
-                else
-                {
-                    return new Tuples(a.XAxis + b.XAxis, a.YAxis + b.YAxis, a.ZAxis + b.ZAxis, a.WAxis + b.WAxis);
-                }
-                       
+            }
+            else if (a.IsPoint() && b.IsPoint())
+            {
+                throw new ArgumentException("Cannot add two points together");
+            }
+            else
+            {
+                return new Tuples(a.XAxis + b.XAxis, a.YAxis + b.YAxis, a.ZAxis + b.ZAxis, a.WAxis + b.WAxis);
+            }
+
         }
 
         private static Tuples Substract(Tuples a, Tuples b)
         {
-            
-                if (a == null || b == null)
-                {
-                    throw new ArgumentNullException();
-                }
-                else if (a.IsVector() && b.IsPoint())
-                {
-                    throw new ArgumentException("Cannot substract a point from a vector");
 
-                }
-                else
-                {
-                    return new Tuples(a.XAxis - b.XAxis, a.YAxis - b.YAxis, a.ZAxis - b.ZAxis, a.WAxis - b.WAxis);
-                }
-                      
+            if (a == null || b == null)
+            {
+                throw new ArgumentNullException();
+            }
+            else if (a.IsVector() && b.IsPoint())
+            {
+                throw new ArgumentException("Cannot substract a point from a vector");
+
+            }
+            else
+            {
+                return new Tuples(a.XAxis - b.XAxis, a.YAxis - b.YAxis, a.ZAxis - b.ZAxis, a.WAxis - b.WAxis);
+            }
+
         }
 
         public static Tuples operator -(Tuples a)
