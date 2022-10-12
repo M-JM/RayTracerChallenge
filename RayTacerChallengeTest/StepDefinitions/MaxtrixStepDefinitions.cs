@@ -14,8 +14,10 @@ namespace RayTracerChallengeTest.StepDefinitions
         private Matrix _matrixResult = new Matrix(0, 0);
         private bool _resultComparison = false;
         private float _matrixValue = 0.0f;
+        private float _determinant = 0.0f;
         private Tuples _tuple = new Tuples(0, 0, 0, 0);
         private Tuples _tupleResult = new Tuples(0, 0, 0, 0);
+        private float _minor = 0.0f;
 
 
         [Given(@"a matrix M with (.*)")]
@@ -25,26 +27,26 @@ namespace RayTracerChallengeTest.StepDefinitions
             _matrix.InitializeMatrix(multilineText);
         }
 
- 
+
         [When(@"inspecting the maxtrix with the following (.*) and (.*)")]
         public void WhenInspectingTheMaxtrixWithTheFollowingAnd(int p0, int p1)
         {
             _matrixValue = (float)_matrix.GetElement(p0, p1);
         }
 
-        
-     
+
+
         [Then(@"the result should be (.*)")]
         public void ThenTheResultShouldBe(float p0)
         {
-            Assert.AreEqual(p0,_matrixValue );
+            Assert.AreEqual(p0, _matrixValue);
         }
 
 
         [Given(@"a matrix N with (.*)")]
         public void GivenAMatrixNWith(int p0, string multilineText)
         {
-            _matrix2 = new Matrix(p0,p0);
+            _matrix2 = new Matrix(p0, p0);
             _matrix2.InitializeMatrix(multilineText);
         }
 
@@ -87,7 +89,7 @@ namespace RayTracerChallengeTest.StepDefinitions
         [Then(@"the result should be")]
         public void ThenTheResultShouldBe(string multilineText)
         {
-            Matrix _matrixExpected = new Matrix(4,4);
+            Matrix _matrixExpected = new Matrix(4, 4);
             _matrixExpected.InitializeMatrix(multilineText);
             Assert.IsTrue(_matrixResult.Equals(_matrixExpected));
         }
@@ -137,6 +139,50 @@ namespace RayTracerChallengeTest.StepDefinitions
             Tuples _tupleExpected = new Tuples(p0, p1, p2, p3);
             Assert.IsTrue(_tupleResult.Equals(_tupleExpected));
         }
+
+        [When(@"transposing the matrix")]
+        public void WhenTransposingTheMatrix()
+        {
+            _matrixResult = _matrix.Transpose();
+        }
+
+        [When(@"transposing the identity matrix")]
+        public void WhenTransposingTheIdentityMatrix()
+        {
+            _matrixResult = _matrix2.Transpose();
+        }
+
+        [When(@"calculating the determinant")]
+        public void WhenCalculatingTheDeterminant()
+        {
+            _determinant = _matrix.Determinant();
+        }
+
+        [Then(@"the outcome should be (.*)")]
+        public void ThenTheOutcomeShouldBe(float p0)
+        {
+            Assert.That(p0.Equals(_determinant));
+        }
+
+        [When(@"calculating the submatrix with row (.*) and col (.*)")]
+        public void WhenCalculatingTheSubmatrixWithRowAndCol(int p0, int p1)
+        {
+            _matrixResult = _matrix.Submatrix(p0, p1);
+        }
+        
+        [When(@"calculating the minor with row (.*) and col (.*)")]
+        public void WhenCalculatingTheMinorWithRowAndCol(int p0, int p1)
+        {
+            Matrix _matrixsub = _matrix.Submatrix(p0, p1);
+            _determinant = Matrix.Minor(_matrixsub);
+        }
+
+        [When(@"calculating the cofactor with row (.*) and col (.*)")]
+        public void WhenCalculatingTheCofactorWithRowAndCol(int p0, int p1)
+        {
+            _determinant = Matrix.Cofactor(_matrix,p0, p1);
+        }
+
 
 
     }

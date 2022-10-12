@@ -119,13 +119,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 8
-testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5.5, 6.5, 7.5, 8.5},\r\n{9, 10, 11, 12},\r\n{13.5, 14.5, 15.5, 16.5}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5.5, 6.5, 7.5, 8.5},\r\n{9, 10, 11, 12},\r\n{13.5, 14.5, 15.5, 16.5}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 15
-testRunner.When(string.Format("inspecting the maxtrix with the following {0} and {1}", row, col), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("inspecting the maxtrix with the following {0} and {1}", row, col), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 16
-testRunner.Then(string.Format("the result should be {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the result should be {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -173,13 +173,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 29
-testRunner.Given("a matrix M with 2", "{-3, 5},\r\n{1, -2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a matrix M with 2", "{-3, 5},\r\n{1, -2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 34
-testRunner.When(string.Format("inspecting the maxtrix with the following {0} and {1}", row, col), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("inspecting the maxtrix with the following {0} and {1}", row, col), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 35
-testRunner.Then(string.Format("the result should be {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the result should be {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -226,13 +226,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 45
-testRunner.Given("a matrix M with 3", "{-3, 5, 0},\r\n{1, -2, -7},\r\n{0, 1, 1}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a matrix M with 3", "{-3, 5, 0},\r\n{1, -2, -7},\r\n{0, 1, 1}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 51
-testRunner.When(string.Format("inspecting the maxtrix with the following {0} and {1}", row, col), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("inspecting the maxtrix with the following {0} and {1}", row, col), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 52
-testRunner.Then(string.Format("the result should be {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the result should be {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -268,16 +268,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 62
-testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 69
-testRunner.And("a matrix N with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("a matrix N with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 76
-testRunner.When("comparing the matrices", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("comparing the matrices", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 77
-testRunner.Then("they should be considered equal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("they should be considered equal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -313,16 +313,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 81
-testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 88
-testRunner.And("a matrix N with 4", "{2, 3, 4, 5},\r\n{6, 7, 8, 9},\r\n{8, 7, 6, 5},\r\n{4, 3, 2, 1}", ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("a matrix N with 4", "{2, 3, 4, 5},\r\n{6, 7, 8, 9},\r\n{8, 7, 6, 5},\r\n{4, 3, 2, 1}", ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 95
-testRunner.When("comparing the matrices", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("comparing the matrices", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 96
-testRunner.Then("they should not be considered equal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("they should not be considered equal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -358,16 +358,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 101
-testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{5, 6, 7, 8},\r\n{9, 8, 7, 6},\r\n{5, 4, 3, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 108
-testRunner.And("a matrix N with 4", "{-2, 1, 2, 3},\r\n{3, 2, 1, -1},\r\n{4, 3, 6, 5},\r\n{1, 2, 7, 8}", ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("a matrix N with 4", "{-2, 1, 2, 3},\r\n{3, 2, 1, -1},\r\n{4, 3, 6, 5},\r\n{1, 2, 7, 8}", ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 115
-testRunner.When("multiplying the matrices", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("multiplying the matrices", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 116
-testRunner.Then("the outcome should be a Matrix with 4 and", "{20, 22, 50, 48},\r\n{44, 54, 114, 108},\r\n{40, 58, 110, 102},\r\n{16, 26, 46, 42}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the outcome should be a Matrix with 4 and", "{20, 22, 50, 48},\r\n{44, 54, 114, 108},\r\n{40, 58, 110, 102},\r\n{16, 26, 46, 42}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -403,16 +403,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 127
-testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{2, 4, 4, 2},\r\n{8, 6, 4, 1},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a matrix M with 4", "{1, 2, 3, 4},\r\n{2, 4, 4, 2},\r\n{8, 6, 4, 1},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 134
-testRunner.And("a tuple T with value (1, 2, 3, 1)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("a tuple T with value (1, 2, 3, 1)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 135
-testRunner.When("multiplying the matrix and tuple", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("multiplying the matrix and tuple", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 136
-testRunner.Then("the outcome should be a tuple with value (18, 24, 33, 1)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the outcome should be a tuple with value (18, 24, 33, 1)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -448,16 +448,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 142
-testRunner.Given("a matrix M with 4", "{0, 1, 2, 4},\r\n{1, 2, 4, 8},\r\n{2, 4, 8, 16},\r\n{4, 8, 16, 32}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a matrix M with 4", "{0, 1, 2, 4},\r\n{1, 2, 4, 8},\r\n{2, 4, 8, 16},\r\n{4, 8, 16, 32}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 149
-testRunner.And("a matrix Identity", "{1, 0, 0, 0},\r\n{0, 1, 0, 0},\r\n{0, 0, 1, 0},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("a matrix Identity", "{1, 0, 0, 0},\r\n{0, 1, 0, 0},\r\n{0, 0, 1, 0},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 156
-testRunner.When("multiplying the matrix and identity matrix", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("multiplying the matrix and identity matrix", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 157
-testRunner.Then("the result should be", "{0, 1, 2, 4},\r\n{1, 2, 4, 8},\r\n{2, 4, 8, 16},\r\n{4, 8, 16, 32}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the result should be", "{0, 1, 2, 4},\r\n{1, 2, 4, 8},\r\n{2, 4, 8, 16},\r\n{4, 8, 16, 32}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -493,16 +493,456 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 167
-testRunner.Given("a matrix Identity", "{1, 0, 0, 0},\r\n{0, 1, 0, 0},\r\n{0, 0, 1, 0},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a matrix Identity", "{1, 0, 0, 0},\r\n{0, 1, 0, 0},\r\n{0, 0, 1, 0},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 174
-testRunner.And("a tuple T with value (1, 2, 3, 4)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("a tuple T with value (1, 2, 3, 4)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 175
-testRunner.When("multiplying the tuple and identity matrix", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("multiplying the tuple and identity matrix", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 176
-testRunner.Then("the outcome should be a tuple with value (1, 2, 3, 4)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the outcome should be a tuple with value (1, 2, 3, 4)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Transposing a Matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Transform")]
+        public virtual void TransposingAMatrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Transform"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Transposing a Matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 179
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 180
+ testRunner.Given("a matrix M with 4", "{0, 9, 3, 0},\r\n{9, 8, 0, 8},\r\n{1, 8, 5, 3},\r\n{0, 0, 5, 8}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 187
+ testRunner.When("transposing the matrix", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 188
+ testRunner.Then("the outcome should be a Matrix with 4 and", "{0, 9, 1, 0},\r\n{9, 8, 8, 0},\r\n{3, 0, 5, 5},\r\n{0, 8, 3, 8}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Transposing a Identity Matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Transform")]
+        public virtual void TransposingAIdentityMatrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Transform"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Transposing a Identity Matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 197
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 198
+ testRunner.Given("a matrix Identity", "{1, 0, 0, 0},\r\n{0, 1, 0, 0},\r\n{0, 0, 1, 0},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 205
+ testRunner.When("transposing the identity matrix", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 206
+ testRunner.Then("the outcome should be a Matrix with 4 and", "{1, 0, 0, 0},\r\n{0, 1, 0, 0},\r\n{0, 0, 1, 0},\r\n{0, 0, 0, 1}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Calculating the determinant of a 2x2 matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Determinants")]
+        public virtual void CalculatingTheDeterminantOfA2X2Matrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Determinants"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Calculating the determinant of a 2x2 matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 215
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 216
+ testRunner.Given("a matrix M with 2", "{1, 5},\r\n{-3, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 221
+ testRunner.When("calculating the determinant", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 222
+ testRunner.Then("the outcome should be 17", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("A submatrix of a 3x3 matrix is a 2x2 matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("SubMatrix")]
+        public virtual void ASubmatrixOfA3X3MatrixIsA2X2Matrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "SubMatrix"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A submatrix of a 3x3 matrix is a 2x2 matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 225
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 226
+ testRunner.Given("a matrix M with 3", "{1, 5, 0},\r\n{-3, 2, 7},\r\n{0, 6, -3}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 232
+ testRunner.When("calculating the submatrix with row 0 and col 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 233
+ testRunner.Then("the outcome should be a Matrix with 2 and", "{-3, 2},\r\n{0, 6}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("A submatrix of a 4x4 matrix is a 3x3 matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("SubMatrix")]
+        public virtual void ASubmatrixOfA4X4MatrixIsA3X3Matrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "SubMatrix"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A submatrix of a 4x4 matrix is a 3x3 matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 240
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 241
+ testRunner.Given("a matrix M with 4", "{-6, 1, 1, 6},\r\n{-8, 5, 8, 6},\r\n{-1, 0, 8, 2},\r\n{-7, 1, -1, 1}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 248
+ testRunner.When("calculating the submatrix with row 2 and col 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 249
+ testRunner.Then("the outcome should be a Matrix with 3 and", "{-6, 1, 6},\r\n{-8, 8, 6},\r\n{-7, -1, 1}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Calculating the Minor of a 3x3 matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Minor")]
+        public virtual void CalculatingTheMinorOfA3X3Matrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Minor"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Calculating the Minor of a 3x3 matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 257
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 258
+ testRunner.Given("a matrix M with 3", "{3, 5, 0},\r\n{2, -1, -7},\r\n{6, -1, 5}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 264
+ testRunner.When("calculating the minor with row 1 and col 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 265
+ testRunner.Then("the outcome should be 25", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Calculating the Cofactor of a 3x3 matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Cofactor")]
+        public virtual void CalculatingTheCofactorOfA3X3Matrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Cofactor"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Calculating the Cofactor of a 3x3 matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 268
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 269
+ testRunner.Given("a matrix M with 3", "{3, 5, 0},\r\n{2, -1, -7},\r\n{6, -1, 5}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 275
+ testRunner.When("calculating the cofactor with row 0 and col 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 276
+ testRunner.Then("the outcome should be -12", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Calculating the Cofactor of a 3x3 matrix with row 1 and col 0")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Cofactor")]
+        public virtual void CalculatingTheCofactorOfA3X3MatrixWithRow1AndCol0()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Cofactor"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Calculating the Cofactor of a 3x3 matrix with row 1 and col 0", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 279
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 280
+ testRunner.Given("a matrix M with 3", "{3, 5, 0},\r\n{2, -1, -7},\r\n{6, -1, 5}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 286
+ testRunner.When("calculating the cofactor with row 1 and col 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 287
+ testRunner.Then("the outcome should be -25", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Calculating the determinant of a 3x3 matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Determinants")]
+        public virtual void CalculatingTheDeterminantOfA3X3Matrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Determinants"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Calculating the determinant of a 3x3 matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 290
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 291
+ testRunner.Given("a matrix M with 3", "{1, 2, 6},\r\n{-5, 8, -4},\r\n{2, 6, 4}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 297
+ testRunner.When("calculating the determinant", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 298
+ testRunner.Then("the outcome should be -196", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Calculating the determinant of a 4x4 matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Determinants")]
+        public virtual void CalculatingTheDeterminantOfA4X4Matrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Determinants"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Calculating the determinant of a 4x4 matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 301
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 302
+ testRunner.Given("a matrix M with 4", "{-2, -8, 3, 5},\r\n{-3, 1, 7, 3},\r\n{1, 2, -9, 6},\r\n{-6, 7, 7, -9}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 309
+ testRunner.When("calculating the determinant", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 310
+ testRunner.Then("the outcome should be -4071", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
