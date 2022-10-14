@@ -947,6 +947,232 @@ this.ScenarioInitialize(scenarioInfo);
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Testing an invertible matrix for invertibility")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Invertible")]
+        public virtual void TestingAnInvertibleMatrixForInvertibility()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Invertible"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Testing an invertible matrix for invertibility", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 313
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 314
+ testRunner.Given("a matrix M with 4", "{6, 4, 4, 4},\r\n{5, 5, 7, 6},\r\n{4, -9, 3, -7},\r\n{9, 1, 7, -6}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 321
+ testRunner.When("testing the matrix for invertibility", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 322
+ testRunner.Then("the outcome should report true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Testing a noninvertible matrix for invertibilty")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Invertible")]
+        public virtual void TestingANoninvertibleMatrixForInvertibilty()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Invertible"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Testing a noninvertible matrix for invertibilty", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 325
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 326
+testRunner.Given("a matrix M with 4", "{-4, 2, -2, -3},\r\n{9, 6, 2, 6},\r\n{0, -5, 1, -5},\r\n{0, 0, 0, 0}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 333
+ testRunner.When("testing the matrix for invertibility", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 334
+ testRunner.Then("the outcome should report false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Calculating the inverse of a matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Invertible")]
+        public virtual void CalculatingTheInverseOfAMatrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Invertible"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Calculating the inverse of a matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 337
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 338
+testRunner.Given("a matrix M with 4", "{-5, 2, 6, -8},\r\n{1, -5, 1, 8},\r\n{7, 7, -6, -7},\r\n{1, -3, 7, 4}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 345
+ testRunner.When("calculating the inverse", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 346
+ testRunner.Then("the outcome should be a Matrix with 4 and", "{0.21805, 0.45113, 0.24060, -0.04511},\r\n{-0.80827, -1.45677, -0.44361, 0.52068},\r" +
+                        "\n{-0.07895, -0.22368, -0.05263, 0.19737},\r\n{-0.52256, -0.81391, -0.30075, 0.3063" +
+                        "9}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Calculating the inverse of another matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Invertible")]
+        public virtual void CalculatingTheInverseOfAnotherMatrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Invertible"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Calculating the inverse of another matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 355
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 356
+testRunner.Given("a matrix M with 4", "{8, -5, 9, 2},\r\n{7, 5, 6, 1},\r\n{-6, 0, 9, 6},\r\n{-3, 0, -9, -4}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 363
+ testRunner.When("calculating the inverse", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 364
+ testRunner.Then("the outcome should be a Matrix with 4 and", "{-0.15385, -0.15385, -0.28205, -0.53846},\r\n{-0.07692, 0.12308, 0.02564, 0.03077}," +
+                        "\r\n{0.35897, 0.35897, 0.43590, 0.92308},\r\n{-0.69231, -0.69231, -0.76923, -1.92308" +
+                        "}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Calculating the inverse of a third matrix")]
+        [NUnit.Framework.CategoryAttribute("Operations")]
+        [NUnit.Framework.CategoryAttribute("Invertible")]
+        public virtual void CalculatingTheInverseOfAThirdMatrix()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations",
+                    "Invertible"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Calculating the inverse of a third matrix", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 372
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 373
+testRunner.Given("a matrix M with 4", "{9, 3, 0, 9},\r\n{-5, -2, -6, -3},\r\n{-4, 9, 6, 4},\r\n{-7, 6, 6, 2}", ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 380
+ testRunner.When("calculating the inverse", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 381
+ testRunner.Then("the outcome should be a Matrix with 4 and", "{-0.04074, -0.07778, 0.14444, -0.22222},\r\n{-0.07778, 0.03333, 0.36667, -0.33333}," +
+                        "\r\n{-0.02901, -0.14630, -0.10926, 0.12963},\r\n{0.17778, 0.06667, -0.26667, 0.33333" +
+                        "}", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

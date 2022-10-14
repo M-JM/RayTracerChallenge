@@ -164,6 +164,19 @@ namespace RayTracerChallengeTest.StepDefinitions
             Assert.That(p0.Equals(_determinant));
         }
 
+        [Then(@"the outcome should report true")]
+        public void ThenTheOutcomeShouldReportTrue()
+        {
+            Assert.IsTrue(_matrix.IsInvertible());
+        }
+
+        [Then(@"the outcome should report false")]
+        public void ThenTheOutcomeShouldReportFalse()
+        {
+            Assert.IsFalse(_matrix.IsInvertible());
+        }
+
+
         [When(@"calculating the submatrix with row (.*) and col (.*)")]
         public void WhenCalculatingTheSubmatrixWithRowAndCol(int p0, int p1)
         {
@@ -181,6 +194,20 @@ namespace RayTracerChallengeTest.StepDefinitions
         public void WhenCalculatingTheCofactorWithRowAndCol(int p0, int p1)
         {
             _determinant = Matrix.Cofactor(_matrix,p0, p1);
+        }
+
+
+        [When(@"testing the matrix for invertibility")]
+        public void WhenTestingTheMatrixForInvertibility()
+        {
+            _resultComparison = _matrix.IsInvertible();
+        }
+
+        [When(@"calculating the inverse")]
+        public void WhenCalculatingTheInverse()
+        {
+            _matrixResult = new Matrix(4, 4);
+            _matrixResult = _matrix.Inverse();
         }
 
 

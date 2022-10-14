@@ -66,7 +66,9 @@ namespace RayTracerChallenge
                 {
                     for (int j = 0; j < x.Col; j++)
                     {
-                        if (x.GetElement(i, j) != this.GetElement(i, j))
+                        var test = x.GetElement(i, j);
+                        var test2 = this.GetElement(i, j);
+                        if (!floatExtensions.isEqualD(x.GetElement(i, j), this.GetElement(i, j)))
                             return false;
                     }
                 }
@@ -187,8 +189,6 @@ namespace RayTracerChallenge
           
         }
 
-      
-
         public static float Minor(Matrix _matrixsub)
         {
             return (float)_matrixsub.Determinant();
@@ -205,6 +205,29 @@ namespace RayTracerChallenge
             {
                 return (float)-subMatrix.Determinant();
             }
+        }
+
+        public bool IsInvertible()
+        {
+            var det = this.Determinant();
+            return det != 0;
+        }
+
+        public Matrix Inverse()
+        {
+            if (!this.IsInvertible())
+            {
+                throw new Exception("Matrix is not invertible");
+            }
+            Matrix result = new(this.Row, this.Col);
+            for (int i = 0; i < this.Row; i++)
+            {
+                for (int j = 0; j < this.Col; j++)
+                {
+                    result._matrix[j, i] = (float)(Cofactor(this, i, j) / this.Determinant());
+                }
+            }
+            return result;
         }
     }
 }
